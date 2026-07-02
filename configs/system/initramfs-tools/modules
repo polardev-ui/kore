@@ -1,0 +1,10 @@
+# Kore OS - extra kernel modules for initramfs
+# VirtIO modules for QEMU/KVM/UTM
+virtio_blk
+virtio_pci
+virtio
+virtio_ring
+virtio_mmio
+virtio_net
+nvme
+ahci

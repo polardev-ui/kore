@@ -1,0 +1,10 @@
+# Kore OS - default enabled services
+enable sddm.service
+enable NetworkManager.service
+enable systemd-resolved.service
+enable pipewire.service
+enable wireplumber.service
+enable pipewire-pulse.service
+enable kore-firstboot.service
+enable kore-bootsound.service
+enable ufw.service

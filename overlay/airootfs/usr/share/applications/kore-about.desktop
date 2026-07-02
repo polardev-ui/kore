@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=About Kore OS
+Comment=Learn more about Kore OS
+Exec=/usr/local/bin/kore-welcome
+Icon=help-about
+Terminal=true
+Type=Application
+Categories=System;Settings;
+StartupNotify=false

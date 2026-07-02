@@ -1,0 +1,4 @@
+[Plymouth Theme]
+Name=Kore OS
+Description=Animated boot splash for Kore OS
+ModuleName=script

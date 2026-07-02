@@ -1,0 +1,19 @@
+# Kore OS GRUB bootloader configuration
+# Live environment defaults
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=10
+GRUB_TIMEOUT_STYLE=menu
+GRUB_DISTRIBUTOR="Kore OS Live"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=3 udev.log_priority=3 apparmor=1 security=apparmor audit=1"
+GRUB_CMDLINE_LINUX=""
+GRUB_PRELOAD_MODULES="part_gpt part_msdos"
+GRUB_ENABLE_CRYPTODISK=y
+GRUB_GFXPAYLOAD_LINUX=keep
+GRUB_GFXMODE=auto
+GRUB_THEME=/usr/share/grub/themes/kore/theme.txt
+GRUB_TERMINAL_INPUT=console
+GRUB_TERMINAL_OUTPUT=gfxterm
+GRUB_BACKGROUND=/usr/share/grub/themes/kore/splash.png
+GRUB_DISABLE_SUBMENU=y
+GRUB_SAVEDEFAULT=true

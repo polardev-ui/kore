@@ -1,0 +1,35 @@
+services:
+  koreos-builder:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        - BUILD_UID=${UID:-1000}
+        - BUILD_GID=${GID:-1000}
+    image: koreos-builder:latest
+    container_name: koreos-builder
+    privileged: true
+    security_opt:
+      - seccomp=unconfined
+    volumes:
+      - ./assets:/opt/koreos/assets:ro
+      - ./configs:/opt/koreos/configs:ro
+      - ./scripts:/opt/koreos/scripts:ro
+      - ./docker/entrypoint.sh:/entrypoint.sh:ro
+      - ./overlay:/opt/koreos/overlay:ro
+      - ./output:/opt/koreos/output
+    environment:
+      - BUILD_MODE=${BUILD_MODE:-iso}
+      - ARCH=${ARCH:-x86_64}
+      - KORE_VERSION=${KORE_VERSION:-1.0.0}
+    tmpfs:
+      - /tmp:size=10G,exec
+    cap_add:
+      - SYS_ADMIN
+      - SYS_RAWIO
+      - MKNOD
+      - NET_ADMIN
+    devices:
+      - /dev/loop-control:/dev/loop-control
+      - /dev/fuse:/dev/fuse

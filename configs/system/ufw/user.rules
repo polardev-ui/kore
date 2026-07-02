@@ -1,0 +1,28 @@
+# Kore OS UFW Rules
+# Default: deny incoming, allow outgoing
+
+*u filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+
+# Allow loopback
+-A INPUT -i lo -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+
+# Allow established/related connections
+-A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+# Allow SSH (port 22)
+-A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+
+# Allow ping
+-A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+
+# Allow DHCP
+-A INPUT -p udp --dport 67:68 -j ACCEPT
+
+# Allow mDNS
+-A INPUT -p udp --dport 5353 -d 224.0.0.251 -j ACCEPT
+
+COMMIT

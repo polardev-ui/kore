@@ -1,0 +1,8 @@
+Place a startup.wav file here to enable the boot sound.
+
+The boot sound is played by kore-bootsound.service via paplay
+at the end of the graphical startup sequence.
+
+Supported formats: WAV (recommended), OGG, FLAC, MP3 (via ffplay).
+
+The file should be a short (2-5 second) chime or jingle.

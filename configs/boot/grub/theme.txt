@@ -1,0 +1,54 @@
+# Kore OS GRUB Theme
+# ===================
+
+title-text: "Kore OS"
+title-font: "JetBrains Mono Bold 24"
+title-color: "#d4d4d8"
+title-align: "center"
+
+desktop-image: "splash.png"
+desktop-color: "#0a0a0c"
+
+terminal-font: "JetBrains Mono 14"
+
++ boot_menu {
+    left = 25%
+    top = 35%
+    width = 50%
+    height = 40%
+    item_color = "#a1a1aa"
+    selected_item_color = "#ffffff"
+    item_height = 36
+    item_padding = 8
+    item_spacing = 4
+    item_font = "JetBrains Mono 14"
+    selected_item_font = "JetBrains Mono Bold 14"
+    item_icon_space = 12
+    selected_item_icon_space = 12
+    icon_width = 24
+    icon_height = 24
+    item_icon = "icons/kore.png"
+    selected_item_icon = "icons/kore.png"
+    scrollbar = false
+}
+
++ boot_menu_left {
+    color = "#3f3f46"
+}
+
++ boot_menu_right {
+    color = "#3f3f46"
+}
+
++ vbox {
+    left = 25%
+    top = 80%
+    width = 50%
+}
+
+label {
+    text = "Kore OS — Minimal | Clean | Secure"
+    font = "JetBrains Mono 11"
+    color = "#52525b"
+    align = "center"
+}

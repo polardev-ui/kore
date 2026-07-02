@@ -1,0 +1,7 @@
+# Kore OS PAM configuration for KDE
+auth            required        pam_unix.so
+auth            required        pam_nologin.so
+account         required        pam_unix.so
+password        required        pam_unix.so
+session         required        pam_unix.so
+session         required        pam_env.so

@@ -1,0 +1,25 @@
+# Kore OS Fail2Ban Configuration
+[DEFAULT]
+ignoreip = 127.0.0.1/8 ::1
+bantime = 3600
+findtime = 600
+maxretry = 5
+destemail = root@localhost
+action = %(action_)s
+
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+bantime = 86400
+
+[sshd-dos]
+enabled = true
+port = ssh
+filter = sshd-dos
+logpath = /var/log/auth.log
+maxretry = 6
+findtime = 180
+bantime = 3600

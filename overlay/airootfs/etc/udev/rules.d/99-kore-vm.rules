@@ -1,0 +1,13 @@
+# Kore OS udev rules for VM optimization
+
+# VMware mouse integration
+ACTION=="add", SUBSYSTEM=="input", ATTRS{name}=="VMware*", MODE="0660"
+
+# VirtualBox guest integration
+ACTION=="add", SUBSYSTEM=="input", ATTRS{name}=="VirtualBox*", MODE="0660"
+
+# QEMU/SPICE agent
+ACTION=="add", SUBSYSTEM=="virtio-ports", ATTRS{name}=="org.spice-space.webdav.0", MODE="0660"
+
+# UTM SPICE support
+ACTION=="add", ATTRS{modalias}=="*qemu*", MODE="0660"

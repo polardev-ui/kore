@@ -1,0 +1,34 @@
+[Wallpaper]
+defaultWallpaperTheme=Kore
+defaultFileSuffix=.png
+defaultWallpaperWidth=3000
+defaultWallpaperHeight=2000
+defaultWallpaperColor=#0a0a0c
+
+[Grub]
+grubTheme=Kore
+
+[SDDM]
+sddmTheme=kore
+
+[Colors]
+ColorScheme=KoreDark
+
+[Icons]
+Theme=breeze-dark
+
+[PlasmaTheme]
+Theme=org.kore.plasma.desktop
+
+[Layout]
+Layout=org.kore.plasma.desktop
+
+[Fonts]
+General=JetBrains Mono,10,-1,5,50,0,0,0,0,0,Regular
+Fixed=JetBrains Mono,10,-1,5,50,0,0,0,0,0,Regular
+Small=JetBrains Mono,8,-1,5,50,0,0,0,0,0,Regular
+
+[Compositing]
+Enabled=true
+Backend=OpenGL
+AnimationSpeed=1

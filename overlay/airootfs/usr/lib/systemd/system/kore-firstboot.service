@@ -1,0 +1,13 @@
+[Unit]
+Description=Kore OS First Boot Setup
+ConditionPathExists=!/var/lib/kore-firstboot-done
+Before=sddm.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/kore-firstboot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

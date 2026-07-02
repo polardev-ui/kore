@@ -1,0 +1,13 @@
+NAME="Kore OS"
+PRETTY_NAME="Kore OS 1.0"
+VERSION="1.0"
+VERSION_ID="1.0.0"
+ID=koreos
+ID_LIKE=debian
+BUILD_ID="rolling"
+ANSI_COLOR="0;36"
+HOME_URL="https://wsgpolar.me"
+SUPPORT_URL="https://wsgpolar.me"
+BUG_REPORT_URL="https://wsgpolar.me"
+PRIVACY_POLICY_URL="https://wsgpolar.me"
+LOGO=/usr/share/plymouth/themes/kore/logo.png

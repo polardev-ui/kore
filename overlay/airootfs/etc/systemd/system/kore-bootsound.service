@@ -1,0 +1,12 @@
+[Unit]
+Description=Kore OS Boot Sound
+After=graphical-session.target sound.target
+Requires=sound.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'if [ -f /usr/share/sounds/kore/startup.wav ]; then paplay /usr/share/sounds/kore/startup.wav; fi'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target
