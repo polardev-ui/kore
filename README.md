@@ -33,7 +33,7 @@ A minimal, clean, secure Linux operating system with KDE Plasma.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/koreos.git
+git clone https://github.com/polardev-ui/kore.git
 cd koreos
 
 # Build the x86_64 ISO
