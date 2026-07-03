@@ -14,6 +14,9 @@ A minimal, clean, secure Linux operating system with KDE Plasma.
 - **Beautiful** — Custom dark theme, clean layout, custom login screen
 - **Universal** — Runs on UTM, VirtualBox, VMware, and bare metal
 
+## Preview
+![Kore x86_64 Desktop Environment with KDE Plasma pre-installed](iamges/desktop.png)
+
 ## System Requirements
 
 | Component | Minimum | Recommended |
